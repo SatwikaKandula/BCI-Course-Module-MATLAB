@@ -53,4 +53,5 @@ https://physionet.org/content/eegmmidb/1.0.0/
 - [x] Combine 10 subjects x 3 runs = 900 epochs
 - [x] SVM classifier — 51.8% accuracy
 - [x] Confidence threshold approach
-- [ ] VRsink virtual robot integration
+- [x] 2D MATLAB robot animation using classifier output
+- [ ] VRsink virtual robot integration [If toolbox support is available]
