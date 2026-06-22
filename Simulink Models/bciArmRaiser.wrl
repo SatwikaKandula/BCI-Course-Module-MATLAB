@@ -1,0 +1,217 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF torso Transform {
+	translation	-0.526093 1.34729 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    diffuseColor	0 0.7 0
+			    }
+
+		    }
+
+		    geometry	Box {
+			    size	4 6 2
+		    }
+
+	    }
+
+	    DEF lShoulder Transform {
+		    translation	-2.5 2 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						diffuseColor	0.9 0.78 0.64
+					}
+
+				}
+
+				geometry	Sphere {
+				}
+
+			}
+
+			DEF LUA Transform {
+				translation	0 -1.5 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.9 0.78 0.64
+						    }
+
+					    }
+
+					    geometry	Cylinder {
+						    radius	0.75
+					    }
+
+				    }
+
+				    DEF lElbow Transform {
+					    translation	0 -1.5 0
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									diffuseColor	0.9 0.78 0.64
+								}
+
+							}
+
+							geometry	Sphere {
+							}
+
+						}
+
+						DEF LFA Transform {
+							translation	0 -1.5 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										diffuseColor	0.9 0.78 0.64
+									}
+
+								}
+
+								geometry	Cylinder {
+									radius	0.75
+								}
+
+							}
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+
+	    DEF rShoulder Transform {
+		    translation	2.5 2 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						diffuseColor	0.9 0.78 0.64
+					}
+
+				}
+
+				geometry	Sphere {
+				}
+
+			}
+
+			DEF RUA Transform {
+				translation	0 -1.5 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.9 0.78 0.64
+						    }
+
+					    }
+
+					    geometry	Cylinder {
+						    radius	0.75
+					    }
+
+				    }
+
+				    DEF rElbow Transform {
+					    translation	0 -1.5 0
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									diffuseColor	0.9 0.78 0.64
+								}
+
+							}
+
+							geometry	Sphere {
+							}
+
+						}
+
+						DEF RFA Transform {
+							translation	0 -1.5 0
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										diffuseColor	0.9 0.78 0.64
+									}
+
+								}
+
+								geometry	Cylinder {
+									radius	0.75
+								}
+
+							}
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+
+	    DEF neck Transform {
+		    translation	0 3.25 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						diffuseColor	0.9 0.78 0.64
+					}
+
+				}
+
+				geometry	Cylinder {
+					radius	0.75
+				}
+
+			}
+
+			DEF head Transform {
+				translation	0 2.5 0
+				scale	1.75 2 1.75
+				children Shape {
+					appearance	Appearance {
+						material	Material {
+							diffuseColor	0.9 0.78 0.64
+						}
+
+					}
+
+					geometry	Sphere {
+					}
+
+				}
+			}
+		    ]
+	    }
+	]
+}
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
