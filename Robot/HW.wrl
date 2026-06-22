@@ -1,0 +1,311 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF head Transform {
+	translation	0 4 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    diffuseColor	0.9 0.7 0.55
+			    }
+
+		    }
+
+		    geometry	Sphere {
+			    radius	0.9
+		    }
+
+	    }
+
+	    DEF neck Transform {
+		    translation	-0.00976862 -0.901767 1.19209e-007
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						ambientIntensity	0.2
+						diffuseColor	0.9 0.7 0.55
+						shininess	0.2
+						transparency	0
+					}
+
+				}
+
+				geometry	Cylinder {
+					height	1
+					radius	0.3
+				}
+
+			}
+
+			DEF body Transform {
+				translation	0 -1.55 0
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.1 0.3 0.9
+						    }
+
+					    }
+
+					    geometry	Box {
+						    size	1.5 2 2
+					    }
+
+				    }
+
+				    DEF right_sh Transform {
+					    translation	-1.10803 0.824869 -3.27826e-007
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									diffuseColor	0.9 0.7 0.55
+								}
+
+							}
+
+							geometry	Sphere {
+								radius	0.3
+							}
+
+						}
+
+						DEF right_arm Transform {
+							translation	0 -0.7 0
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    diffuseColor	0.9 0.7 0.55
+									    }
+
+								    }
+
+								    geometry	DEF Cylinder Cylinder {
+									    height	1
+									    radius	0.2
+								    }
+
+							    }
+
+							    DEF right_elbow Transform {
+								    translation	-1.00136e-005 -0.666392 2.08616e-007
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+												diffuseColor	0.9 0.7 0.55
+											}
+
+										}
+
+										geometry	Sphere {
+											radius	0.25
+										}
+
+									}
+
+									DEF right_f_arm Transform {
+										translation	-1.09673e-005 -0.658882 1.78814e-007
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+													    diffuseColor	0.9 0.7 0.55
+												    }
+
+											    }
+
+											    geometry	Cylinder {
+												    height	1
+												    radius	0.2
+											    }
+
+										    }
+
+										    DEF right_wrist Transform {
+											    translation	-2.6226e-006 -0.655846 -1.78814e-007
+											    children [ 
+												Shape {
+													appearance	Appearance {
+														material	Material {
+															diffuseColor	0.9 0.7 0.55
+														}
+
+													}
+
+													geometry	Sphere {
+														radius	0.25
+													}
+
+												}
+
+												DEF right_hand Transform {
+													translation	0 -0.4 0
+													children Shape {
+														appearance	Appearance {
+															material	Material {
+																diffuseColor	0.9 0.7 0.55
+															}
+
+														}
+
+														geometry	Cylinder {
+															height	0.5
+															radius	0.2
+														}
+
+													}
+												}
+											    ]
+										    }
+										]
+									}
+								    ]
+							    }
+							]
+						}
+					    ]
+				    }
+
+				    DEF left_sh Transform {
+					    translation	1.1215 0.863842 5.06639e-007
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									diffuseColor	0.9 0.7 0.55
+								}
+
+							}
+
+							geometry	Sphere {
+								radius	0.3
+							}
+
+						}
+
+						DEF left_arm Transform {
+							translation	0.0108684 -0.723332 -7.45058e-008
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    diffuseColor	0.9 0.7 0.55
+									    }
+
+								    }
+
+								    geometry	Cylinder {
+									    height	1
+									    radius	0.2
+								    }
+
+							    }
+
+							    DEF left_elbow Transform {
+								    translation	0 -0.6867 0
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+												diffuseColor	0.9 0.7 0.55
+											}
+
+										}
+
+										geometry	Sphere {
+											radius	0.25
+										}
+
+									}
+
+									DEF left_f_arm Transform {
+										translation	0.0108006 -0.647592 1.78814e-007
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+													    diffuseColor	0.9 0.7 0.55
+												    }
+
+											    }
+
+											    geometry	Cylinder {
+												    height	1
+												    radius	0.2
+											    }
+
+										    }
+
+										    DEF left_wrist Transform {
+											    translation	0.00894451 -0.683205 -0.000402186
+											    rotation	-1 0 0  0.206869
+											    scale	1 1 1
+											    children [ 
+												Shape {
+													appearance	Appearance {
+														material	Material {
+															diffuseColor	0.9 0.7 0.55
+														}
+
+													}
+
+													geometry	Sphere {
+														radius	0.25
+													}
+
+												}
+
+												DEF right_hand Transform {
+													translation	-0.00257939 -0.369756 -1.33332e-008
+													children Shape {
+														appearance	Appearance {
+															material	Material {
+																diffuseColor	0.9 0.7 0.55
+															}
+
+														}
+
+														geometry	Cylinder {
+															height	0.5
+															radius	0.2
+														}
+
+													}
+												}
+											    ]
+										    }
+										]
+									}
+								    ]
+							    }
+							]
+						}
+					    ]
+				    }
+				]
+			}
+		    ]
+	    }
+	]
+}
