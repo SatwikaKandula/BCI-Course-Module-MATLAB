@@ -54,4 +54,4 @@ https://physionet.org/content/eegmmidb/1.0.0/
 - [x] SVM classifier — 51.8% accuracy
 - [x] Confidence threshold approach
 - [x] 2D MATLAB robot animation using classifier output
-- [ ] VRsink virtual robot integration [If toolbox support is available]
+- [x] VRsink virtual robot integration [If toolbox support is available]
